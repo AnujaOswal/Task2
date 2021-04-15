@@ -17,7 +17,7 @@ var data=JSON.parse(this.response); //current created object data
 
  for(x in data)
 {
-    console.log(data[x]["name"]);
+    console.log(data[x].name);
 
 }
 
