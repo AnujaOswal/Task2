@@ -11,10 +11,14 @@ req.send();
 //this fun will be triggered only when the data has been recived successfully.
 req.onload=function(){
 var data=JSON.parse(this.response); //current created object data
-data.forEach(c => {
-    (console.log(c.name))
-});
-    
+// data.forEach(c => {
+//     (console.log(c.name))
+// });
 
+ for(x in data)
+{
+    console.log(data[x]["name"]);
+
+}
 
 }
